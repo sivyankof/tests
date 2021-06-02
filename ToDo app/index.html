@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/e00a8f81f6.js" crossorigin="anonymous"></script>
+        <title>ToDo app</title>
+    </head>
+    <body>
+        <h1>ToDo app</h1>
+        <div class="task-container">
+            <input class="task-input" placeholder="Напишите задание..." />
+            <button class="task-btn">
+                <i class="fa fa-plus"></i>
+            </button>
+            <ul id="task-list" class="task-list">
+                <template id="template-task">
+                    <li class="task-list-item">
+                        <input type="checkbox" id="" name="" class="custom-checkbox" />
+                        <label for=""></label>
+                        <button class="btn-trash">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <script src="action.js"></script>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

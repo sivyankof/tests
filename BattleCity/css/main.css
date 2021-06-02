@@ -1,0 +1,138 @@
+html {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: monospace;
+    z-index: 3;
+}
+
+.game-object {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+}
+
+.game-object__player-tank {
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.game-object__enemy-tank {
+    position: absolute;
+    background-size: contain;
+    z-index: 1;
+    transition: 0.8s;
+}
+
+.game-object__wall {
+    background: url('../img/wall.png');
+    background-size: contain;
+    z-index: 1;
+}
+
+.bullet {
+    position: absolute;
+    z-index: 0;
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    border: 3px solid red;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+#game-field {
+    flex: 1;
+    min-width: 950px;
+    width: 832px;
+}
+#game-map {
+    border: 25px solid #636363;
+    position: absolute;
+    width: 832px;
+    height: 896px;
+    background: #111;
+}
+#legend {
+    flex: 1 30%;
+    margin-left: 20px;
+}
+
+#dead-enemy {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    background-color: #636363;
+    width: 92px;
+    height: 550px;
+}
+
+#dead-player {
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 30px;
+}
+#bigBang {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dead-empty-tanks {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: #636363;
+}
+
+.legend-list {
+    padding: 0;
+}
+.legend-item {
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 10px;
+    display: block;
+    height: 64px;
+    line-height: 64px;
+}
+.legend-item .game-object {
+    top: 0;
+    left: 0;
+}
+
+.reset-game {
+    display: inline;
+    margin-right: 0;
+    align-items: center;
+    height: 50px;
+    width: 203px;
+    font-size: 30px;
+    position: relative;
+    top: 650px;
+    left: 314px;
+    cursor: pointer;
+}
+
+ul {
+    width: 100px;
+    padding: 0;
+}
+li {
+    text-align: center;
+    list-style-type: none;
+}
+span {
+    font-size: 16px;
+}

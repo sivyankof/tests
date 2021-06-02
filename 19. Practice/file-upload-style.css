@@ -1,0 +1,35 @@
+.form-group--file-upload {
+    background-color: #c8dadf;
+    position: relative;
+    padding: 100px 20px;
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+}
+.form-group--file-upload.is-dragover {
+    outline-offset: -20px;
+    outline-color: #c8dadf;
+    background-color: #fff;
+}
+.file-upload--icon {
+    width: 100%;
+    height: 60px;
+    fill: #92b0b3;
+    display: block;
+    margin-bottom: 20px;
+}
+.form-input--file-upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.form-input--file-upload--label {
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
